@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-T" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> <!-- Placeholder icon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chuyên Gia Tạo Prompt AI - Tạo Prompt AI Nâng Cao</title>
+  <meta name="description" content="Tạo prompt AI chất lượng cao, có cấu trúc cho văn bản, hình ảnh và video. Khai thác sức mạnh của Gemini với giao diện lấy cảm hứng từ Web3, đẹp mắt." />
+  <meta name="keywords" content="AI, Trình tạo Prompt, Gemini, Web3, Prompts, Trí tuệ nhân tạo, Sáng tạo nội dung, Prompt hình ảnh, Prompt video, tạo prompt tiếng Việt" />
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/"> <!-- Replace with actual domain -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'primary': 'hsl(260, 100%, 70%)', // Vibrant purple
+            'primary-focus': 'hsl(260, 100%, 60%)',
+            'primary-content': 'hsl(0, 0%, 100%)', // White text for primary
+
+            'secondary': 'hsl(180, 100%, 45%)', // Bright cyan
+            'secondary-focus': 'hsl(180, 100%, 35%)',
+            'secondary-content': 'hsl(210, 50%, 15%)', // Dark text for secondary
+
+            'accent': 'hsl(50, 100%, 60%)', // Warm yellow
+            'accent-content': 'hsl(210, 50%, 15%)',
+
+            // Dark Theme Overhaul
+            'neutral-dark': '#0D0F1A', // Very dark, slightly purplish/bluish base for elements like header/footer
+            'base-100-dark': '#131520', // Main background for dark theme
+            'base-200-dark': '#1A1D2A', // Slightly lighter for card backgrounds, inputs
+            'base-300-dark': '#25293A', // For borders or subtle UI elements, hover states
+            'content-dark': '#E0E0E7', // Default text color on dark backgrounds (slightly bluish white)
+            'content-muted-dark': '#808598', // Muted text (less contrast)
+
+            // Light Theme (ensure consistency)
+            'base-100-light': '#FFFFFF', // Clean white for main background
+            'base-200-light': '#F5F7FA', // Slightly off-white for cards, inputs (cool gray)
+            'base-300-light': '#E1E5EB', // Borders (cool gray)
+            'content-light': '#1E232B', // Default text color on light (dark desaturated blue)
+            'content-muted-light': '#5C677C', // Muted text
+          },
+          boxShadow: {
+            'glow-primary-sm': '0 0 8px hsla(260, 100%, 70%, 0.5)',
+            'glow-primary-md': '0 0 15px hsla(260, 100%, 70%, 0.6)',
+            'glow-primary-lg': '0 0 25px hsla(260, 100%, 70%, 0.7)',
+            'glow-secondary-sm': '0 0 8px hsla(180, 100%, 45%, 0.5)',
+            'glow-secondary-md': '0 0 15px hsla(180, 100%, 45%, 0.6)',
+            
+            'web3-card': '0px 4px 12px rgba(0,0,0,0.05), 0px 1px 3px rgba(0,0,0,0.03)',
+            'web3-card-dark': '0px 8px 30px rgba(13, 15, 26, 0.3), 0px 4px 10px rgba(13, 15, 26, 0.2), 0 0 12px hsla(260, 100%, 70%, 0.15)',
+            'web3-card-hover-dark': '0px 10px 35px rgba(13, 15, 26, 0.35), 0px 5px 15px rgba(13, 15, 26, 0.25), 0 0 18px hsla(260, 100%, 70%, 0.25)',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-out',
+            'slide-in-up': 'slideInUp 0.5s ease-out',
+            'pulse-glow': 'pulseGlow 2s infinite ease-in-out alternate', // Kept for specific uses
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideInUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            pulseGlow: { // Can be refined if needed, but primary use is through static glows now
+              '0%': { boxShadow: '0 0 5px hsla(260, 100%, 70%, 0.7), 0 0 10px hsla(260, 100%, 70%, 0.5)' },
+              '100%': { boxShadow: '0 0 20px hsla(260, 100%, 70%, 0.9), 0 0 30px hsla(260, 100%, 70%, 0.7)' },
+            }
+          },
+          backgroundImage: {
+            'gradient-radial-glow': 'radial-gradient(circle at 50% 0%, hsla(260, 100%, 70%, 0.15) 0%, transparent 60%)',
+            'gradient-radial-glow-secondary': 'radial-gradient(circle at 50% 0%, hsla(180, 100%, 45%, 0.10) 0%, transparent 60%)',
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased bg-base-100-light dark:bg-base-100-dark">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
